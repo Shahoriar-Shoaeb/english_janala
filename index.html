@@ -85,6 +85,22 @@
 
     </section>
 
+    <section class="flex justify-center items-center py-10">
+      <div class="join">
+        <div>
+          <label class="input validator join-item">
+            <input id="input_search" type="text" placeholder="Search Vocabulary Now" required />
+          </label>
+          <div class="validator-hint hidden">Enter valid email address</div>
+        </div>
+        <button id="btn_search" class="btn btn-primary join-item">Search</button>
+      </div>
+    </section>
+
+    <section id="spinner" class="flex justify-center items-center py-10 hidden">
+      <span class="loading loading-dots loading-xl"></span>
+    </section>
+
     <section id="word_container" class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5">
     <div class="text-center bg-sky-100 col-span-full rounded-xl py-10 space-y-6 font-bangla">
         <p class="text-xl font-medium text-gray-600">আপনি এখনো কোন Lesson Select করেন ন</p>
@@ -92,6 +108,25 @@
     </div>
 
     </section>
+
+
+    <!-- Open the modal using ID.showModal() method -->
+  <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+
+  <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box">
+     <div id="details_container" class="space-y-5">
+      
+      
+     </div>
+     <div class="modal-action">
+        <form method="dialog">
+         <!-- if there is a button in form, it will close the modal -->
+         <button class="btn">Close</button>
+       </form>
+     </div>
+   </div>
+  </dialog>
 
   
 
